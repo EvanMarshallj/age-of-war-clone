@@ -25,7 +25,7 @@ export default function Stage(){
     }
 
     return(
-        <div className="stage" onKeyDown={handleKeyDown} onKeyUp={handleKeyUp} tabIndex={0}>
+        <div className="stage" tabIndex={0}>
             <GiFlyingFlag className="middle-flag" />
         </div>
     );

@@ -1,45 +1,56 @@
 :root{
-  --primary-color: #8EB897;
-  --secondary-color: #647aa3;
-  --tertiary-color: #b07156;
-  --light-color: #7d84b2;
-  --dark-color: #30011e;
+  --primary-color: #92AA83;
+  --secondary-color: #B76D68;
+  --tertiary-color: #E7F59E;
+  --light-color: #B0BEA9;
+  --dark-color: #606060;
+  --very-dark: #2D3047;
 }
 
-/* Game */
+::-webkit-scrollbar {
+  display: none;
+}
 
 .background{
-  background-color: var(--primary-color);
+  background-color: var(--dark-color);
   height: 100vh;
-  position: relative;
 }
 
 .window{
   background-color: transparent;
-  border: 4px solid var(--dark-color);
+  border: 4px solid var(--very-dark);
   border-radius: 8px;
   height: 1080px;
   width: 1920px;
   top: 50%;
   left: 50%;
   position: absolute;
-  transform: translate(-50%, -50%) scale(0.5);
+  transform: translate(-50%, -50%) scale(0.6);
   overflow: auto;
 }
+
+/* Stage */
 
 .stage {
   width: 4000px;
   height: 100%;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .middle-flag{
   transform: scale(4);
   position: relative;
   left: 50%;
-  top: 97%;
+  top: 96%;
 }
 
-::-webkit-scrollbar {
-  display: none;
+.ground {
+  background-color: var(--primary-color);
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  bottom: 0%;
+  float: bottom;
+
 }
+

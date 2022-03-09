@@ -18,13 +18,13 @@
 
 .window{
   background-color: transparent;
+  position: relative;
   border: 4px solid var(--very-dark);
   border-radius: 8px;
   height: 1080px;
   width: 1920px;
   top: 50%;
   left: 50%;
-  position: absolute;
   transform: translate(-50%, -50%) scale(0.6);
   overflow: auto;
 }
@@ -62,8 +62,39 @@
 
 .friendly-tower{
   left: 2%;
+  fill: var(--very-dark);
 }
 
 .enemy-tower {
   left: 96%;
+}
+
+/* Interface */
+
+.game-controls{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 20%;
+}
+
+.unit-button{
+  background-color: var(--light-color);
+  position: absolute;
+  cursor: pointer;
+  left: 22px;
+  top: 22px;
+}
+
+.knight-icon{
+  fill: var(--very-dark);
+  width: 52px;
+  height: 52px;
+}
+
+/* Battlefield */
+
+.unit {
+  position: relative;
+  fill: var(--secondary-color)
 }

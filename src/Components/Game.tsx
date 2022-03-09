@@ -5,7 +5,7 @@ export default function Game(){
     
     return(
         <div className="background">
-            <Window />  
+            <Window /> 
         </div>
     );
 }

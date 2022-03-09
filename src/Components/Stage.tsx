@@ -1,4 +1,4 @@
-import React, { useEffect, useState, KeyboardEvent } from 'react';
+import React from 'react';
 import { GiFlyingFlag, GiStoneTower, GiWhiteTower } from 'react-icons/gi'
 import Ground from './Ground';
 

@@ -41,16 +41,29 @@
   transform: scale(4);
   position: relative;
   left: 50%;
-  top: 96%;
+  top: 90%;
 }
 
 .ground {
-  background-color: var(--primary-color);
-  position: absolute;
+  background: url("./Assets/grasspattern.png");
+  position: relative;
   height: 10%;
   width: 100%;
-  bottom: 0%;
-  float: bottom;
-
+  top: 93%;
+  z-index: 1;
 }
 
+.tower {
+  position: relative;
+  transform: scaleY(1.4) scale(10);
+  top: 86%;
+  z-index: 2;
+}
+
+.friendly-tower{
+  left: 2%;
+}
+
+.enemy-tower {
+  left: 96%;
+}

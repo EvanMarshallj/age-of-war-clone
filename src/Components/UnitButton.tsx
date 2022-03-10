@@ -6,7 +6,7 @@ import Unit from './Unit';
 export default function UnitButton(){
 
     function handleClick(){
-        document.querySelector('.stage')!.append(React.createElement(Unit));
+        ReactDOM.render(React.createElement(Unit), document.querySelector('.stage'));
     }
 
     return(

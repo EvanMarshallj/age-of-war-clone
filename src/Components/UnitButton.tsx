@@ -1,16 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { GiSwordBrandish } from 'react-icons/gi';
 import Unit from './Unit';
 
-export default function UnitButton(){
-
-    function handleClick(){
-        ReactDOM.render(React.createElement(Unit), document.querySelector('.stage'));
-    }
+export default function UnitButton(props: {onClick: ()=>void}){
 
     return(
-        <button className='unit-button' onClick={handleClick}>
+        <button className='unit-button' onClick={props.onClick}>
             <GiSwordBrandish className='knight-icon' />
         </button>
     );

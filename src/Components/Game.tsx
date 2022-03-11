@@ -1,11 +1,11 @@
 import * as React from 'react';
-import Window from './Window';
+import Stage from './Stage';
 
 export default function Game(){
     
     return(
         <div className="background">
-            <Window /> 
+            <Stage />
         </div>
     );
 }
